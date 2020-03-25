@@ -1,0 +1,19 @@
+uuid: cd02473e-0fda-4007-9e8e-ba50073f45a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_customer
+    - serialization
+    - user
+id: customer_rest_resource
+plugin_id: customer_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

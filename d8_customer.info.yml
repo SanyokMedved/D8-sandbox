@@ -9,3 +9,4 @@ dependencies:
   - ultimate_cron
   - jsonapi
   - jsonapi_extras
+  - restui

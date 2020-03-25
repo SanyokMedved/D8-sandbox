@@ -1,0 +1,19 @@
+uuid: 3f54f3d1-bad2-48bc-ac72-736f4cfd44cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_customer
+    - serialization
+    - user
+id: entity.customer
+plugin_id: 'entity:customer'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie
