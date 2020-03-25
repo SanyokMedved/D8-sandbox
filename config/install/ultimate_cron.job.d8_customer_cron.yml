@@ -1,0 +1,29 @@
+uuid: 3fb29bda-3a6e-40d7-8ba9-7a1d4687cf29
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_customer
+title: 'Default cron handler'
+id: d8_customer_cron
+weight: 0
+module: d8_customer
+callback: d8_customer_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

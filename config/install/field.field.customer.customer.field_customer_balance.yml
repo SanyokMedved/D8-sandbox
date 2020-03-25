@@ -1,0 +1,24 @@
+uuid: 7696be4c-44c8-4407-b6c7-c12dffe01518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.customer.field_customer_balance
+  module:
+    - d8_customer
+id: customer.customer.field_customer_balance
+field_name: field_customer_balance
+entity_type: customer
+bundle: customer
+label: 'Customer Balance'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

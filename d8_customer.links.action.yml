@@ -1,0 +1,5 @@
+entity.customer.add_form:
+  route_name: entity.customer.add_form
+  title: 'Add Customer'
+  appears_on:
+    - d8_customer.customer_list

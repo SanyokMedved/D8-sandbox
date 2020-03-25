@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\d8_customer\BatchImporter;
+
+/**
+ * Implements hook_cron().
+ */
+function d8_customer_cron() {
+
+  $saved_file = \Drupal::config('d8_customer.settings')->get('csv_file');
+  if ($saved_file) {
+    $batch = new BatchImporter($saved_file, TRUE, ';');
+    $batch->setBatch();
+  }
+}

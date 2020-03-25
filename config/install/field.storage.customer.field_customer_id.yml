@@ -1,0 +1,20 @@
+uuid: 45a890fb-feec-40c1-ab16-92f36520506c
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_customer
+id: customer.field_customer_id
+field_name: field_customer_id
+entity_type: customer
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

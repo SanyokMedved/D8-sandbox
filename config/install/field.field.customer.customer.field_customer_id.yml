@@ -1,0 +1,24 @@
+uuid: cdee9251-1351-4259-b559-08c43705379c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.customer.field_customer_id
+  module:
+    - d8_customer
+id: customer.customer.field_customer_id
+field_name: field_customer_id
+entity_type: customer
+bundle: customer
+label: 'Customer Id'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

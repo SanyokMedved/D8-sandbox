@@ -1,0 +1,11 @@
+name: d8_customer module.
+type: module
+description: 'Custom entity. Work with it.'
+package: custom
+core: 8.x
+dependencies:
+  - ultimate_cron
+  - views
+  - ultimate_cron
+  - jsonapi
+  - jsonapi_extras

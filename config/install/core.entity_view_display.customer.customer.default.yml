@@ -1,0 +1,51 @@
+uuid: 7f73f532-dced-455c-8eed-12c097a72859
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.customer.customer.field_customer_balance
+    - field.field.customer.customer.field_customer_id
+  module:
+    - d8_customer
+    - user
+id: customer.customer.default
+targetEntityType: customer
+bundle: customer
+mode: default
+content:
+  field_customer_balance:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_customer_id:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

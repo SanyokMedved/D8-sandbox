@@ -1,0 +1,8 @@
+d8_customer.customer_list:
+  path: 'customers/{customer_id}'
+  defaults:
+    _controller: '\Drupal\d8_customer\Controller\CustomerListController::buildList'
+    _title: 'Customers'
+    customer_id: 'all'
+  requirements:
+    _permission: 'access content'

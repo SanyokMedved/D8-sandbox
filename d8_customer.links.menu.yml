@@ -1,0 +1,13 @@
+# Customer menu items definition
+entity.customer.collection:
+  title: 'Customer list'
+  route_name: d8_customer.customer_list
+  description: 'List Customer entities'
+  parent: system.admin_structure
+  weight: 100
+
+customer.admin.structure.settings:
+  title: 'Customer settings'
+  description: 'Configure Customer entities'
+  route_name: customer.settings
+  parent: system.admin_structure

@@ -1,0 +1,18 @@
+uuid: 738d9a67-4fe3-4b01-a3f4-beb88ef82d99
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_customer
+id: customer.field_customer_balance
+field_name: field_customer_balance
+entity_type: customer
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

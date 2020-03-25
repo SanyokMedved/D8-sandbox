@@ -1,0 +1,21 @@
+# Customer routing definition
+customer.settings_tab:
+  route_name: customer.settings
+  title: 'Settings'
+  base_route: customer.settings
+
+entity.customer.canonical:
+  route_name: entity.customer.canonical
+  base_route: entity.customer.canonical
+  title: 'View'
+
+entity.customer.edit_form:
+  route_name: entity.customer.edit_form
+  base_route: entity.customer.canonical
+  title: 'Edit'
+
+entity.customer.delete_form:
+  route_name:  entity.customer.delete_form
+  base_route:  entity.customer.canonical
+  title: Delete
+  weight: 10
